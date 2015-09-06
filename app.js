@@ -8,6 +8,11 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var config = require('./config');
+var http = require('http');
+var path = require('path');
+var fs = require('fs');
+
 var app = express();
 
 // view engine setup
